@@ -1,6 +1,7 @@
-streamlit==1.32.2
-pandas==2.2.2
-requests
-beautifulsoup4
-lxml
-fake-useragent
+# To Scrapp Data
+bs4
+pandas
+requests_html
+
+# For the App
+streamlit
