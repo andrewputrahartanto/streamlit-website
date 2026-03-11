@@ -316,7 +316,7 @@ def scrape_metrotv(keywords, num_pages):
 # STREAMLIT DASHBOARD
 # =====================================================
 
-st.title("Dashboard Scraping Berita Kebencanaan")
+st.title("🌍 Dashboard Scraping Berita Kebencanaan")
 
 st.sidebar.header("Pengaturan Scraping")
 
@@ -391,7 +391,15 @@ if run:
 
         st.subheader("Hasil Data Scraping")
 
-        st.dataframe(
+        # ==========================
+        # TABS
+        # ==========================
+
+        tab1, tab2 = st.tabs(["📄 Data", "📖 Detail Berita"])
+
+        with tab1:
+
+            st.dataframe(
             final_df,
             use_container_width=True
         )
@@ -405,17 +413,16 @@ if run:
             "text/csv"
         )
 
-        st.subheader("Detail Isi Berita")
+        with tab2:
 
-        for i, row in final_df.iterrows():
+            for i, row in final_df.iterrows():
 
-            with st.expander(row["Judul"]):
+                with st.expander(row["Judul"]):
 
-                st.write("Tanggal :", row["Tanggal"])
-                st.write("Website :", row["Website"])
-                st.write("Tag :", row["Tag"])
-                st.write("Link :", row["Link"])
+                    st.write("Tanggal :", row["Tanggal"])
+                    st.write("Website :", row["Website"])
+                    st.write("Tag :", row["Tag"])
+                    st.write("Link :", row["Link"])
 
-                st.write("Isi Berita :")
-                st.write(row["Isi Berita"])
-        
+                    st.write("Isi Berita :")
+                    st.write(row["Isi Berita"])
