@@ -5,3 +5,5 @@ requests_html
 
 # For the App
 streamlit
+
+altair<5
