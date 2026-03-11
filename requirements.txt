@@ -1,9 +1,6 @@
-# To Scrapp Data
-bs4
-pandas
-requests_html
-
-# For the App
-streamlit
-
-altair<5
+streamlit==1.41.1
+pandas==2.2.2
+requests
+beautifulsoup4
+lxml
+altair<6
