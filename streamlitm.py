@@ -396,6 +396,8 @@ if run:
             use_container_width=True
         )
 
+        csv = final_df.to_csv(index=False, sep=";").encode("utf-8")
+
         st.download_button(
             "Download CSV",
             csv,
@@ -416,6 +418,4 @@ if run:
 
                 st.write("Isi Berita :")
                 st.write(row["Isi Berita"])
-
-        csv = final_df.to_csv(index=False, sep=";").encode("utf-8")
         
