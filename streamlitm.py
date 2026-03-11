@@ -327,16 +327,16 @@ websites = st.sidebar.multiselect(
 keywords = st.sidebar.multiselect(
     "Pilih Keyword",
     [
-        "bencana",
-        "banjir",
-        "puting beliung",
-        "gelombang pasang",
-        "abrasi",
-        "tanah longsor",
-        "kekeringan",
-        "gempa bumi",
-        "gunung meletus",
-        "kebakaran hutan"
+        "Bencana",
+        "Banjir",
+        "Puting Beliung",
+        "Gelombang Pasang",
+        "Abrasi",
+        "Tanah Longsor",
+        "Kekeringan",
+        "Gempa Bumi",
+        "Gunung Meletus",
+        "Kebakaran Hutan"
     ]
 )
 
