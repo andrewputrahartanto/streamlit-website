@@ -16,57 +16,72 @@ st.set_page_config(
 )
 
 # =====================================================
-# SOFT DARK THEME
+# AUTO THEME (FOLLOW SYSTEM)
 # =====================================================
 
 st.markdown("""
 <style>
 
+/* DEFAULT (LIGHT MODE) */
 .stApp{
-background-color:#1a1c23;
+    background-color:#ffffff;
 }
 
 .main h1,.main h2,.main h3,.main p,.main span,.main label,.main div{
-color:#e2e8f0 !important;
+    color:#1a202c !important;
 }
+
+[data-testid="stMetric"]{
+    background:#f7fafc;
+    border:1px solid #e2e8f0;
+    padding:20px;
+    border-radius:10px;
+}
+
+.stDataFrame thead tr th{
+    background:#edf2f7 !important;
+}
+
+/* DARK MODE (AUTO DETECT SYSTEM) */
+@media (prefers-color-scheme: dark){
+
+    .stApp{
+        background-color:#1a1c23;
+    }
+
+    .main h1,.main h2,.main h3,.main p,.main span,.main label,.main div{
+        color:#e2e8f0 !important;
+    }
+
+    [data-testid="stMetric"]{
+        background:#2d3748;
+        border:1px solid #4a5568;
+    }
+
+    .stDataFrame thead tr th{
+        background:#2d3748 !important;
+    }
+
+}
+
+/* BUTTON STYLE (NETRAL UNTUK LIGHT & DARK) */
 
 div.stButton > button,
 div.stDownloadButton > button,
 div.stLinkButton > a{
-background-color:#38a169 !important;
-color:white !important;
-border-radius:6px !important;
-border:none !important;
+    background-color:#38a169 !important;
+    color:white !important;
+    border-radius:6px !important;
+    border:none !important;
 }
 
 div.stButton > button:hover,
 div.stDownloadButton > button:hover{
-background-color:#48bb78 !important;
-}
-
-[data-testid="stMetric"]{
-background:#2d3748;
-border:1px solid #4a5568;
-padding:20px;
-border-radius:10px;
-}
-
-[data-testid="stMetricValue"]{
-color:#68d391 !important;
-}
-
-[data-testid="stSidebar"]{
-background:#171923;
-}
-
-.stDataFrame thead tr th{
-background:#2d3748 !important;
+    background-color:#48bb78 !important;
 }
 
 </style>
 """, unsafe_allow_html=True)
-
-HEADERS={"User-Agent":"Mozilla/5.0"}
 
 # =====================================================
 # NORMALISASI TANGGAL
