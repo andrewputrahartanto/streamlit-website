@@ -119,11 +119,10 @@ Project ini dibangun menggunakan:
 2. Sistem melakukan scraping berita dari website.
 
 3. Data yang diambil:
-
-- Judul
-- Tanggal
-- Isi berita
-- Link berita
+   - Judul
+   - Tanggal
+   - Isi berita
+   - Link berita
 
 4. Sistem melakukan **ekstraksi informasi kejadian bencana** dari isi berita.
 
