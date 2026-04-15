@@ -51,8 +51,14 @@ Scraping dilakukan berdasarkan keyword tertentu seperti:
 
 - Bencana
 - Banjir
+- Puting Beliung
+- Gelombang Pasang
+- Abrasi
 - Tanah Longsor
+- Kekeringan
 - Gempa Bumi
+- Gunung Meletus
+- Kebakaran Hutan
 
 ---
 
