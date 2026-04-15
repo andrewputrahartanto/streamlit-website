@@ -11,14 +11,14 @@ Dashboard ini dibangun menggunakan **Python dan Streamlit** untuk membantu meman
 ## 📰 Dataset Berita
 Dashboard menampilkan seluruh berita hasil scraping yang telah dikumpulkan dari berbagai portal berita.
 
-![Dataset](docs/dashboard_dataset.png)
+![Dataset](https://github.com/andrew-aph/Scrap-Website-Kebencanaan-Streamlit/blob/main/Dokumentasi%20Tab%201.png)
 
 ---
 
 ## 📖 Detail Berita
 Pengguna dapat melihat **ringkasan isi berita**, tanggal, tag, serta link menuju sumber berita asli.
 
-![Detail](docs/dashboard_detail.png)
+![Detail](https://github.com/andrew-aph/Scrap-Website-Kebencanaan-Streamlit/blob/main/Dokumentasi%20Tab%202.png)
 
 ---
 
@@ -31,7 +31,7 @@ Dashboard juga mengekstrak informasi kejadian bencana seperti:
 - Dampak kejadian
 - Korban terdampak
 
-![Tabel Bencana](docs/dashboard_bencana.png)
+![Tabel Bencana](https://github.com/andrew-aph/Scrap-Website-Kebencanaan-Streamlit/blob/main/Dokumentasi%20Tab%203.png)
 
 ---
 
